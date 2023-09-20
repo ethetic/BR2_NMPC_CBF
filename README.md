@@ -3,6 +3,9 @@ Videos of BlueRov2 Simulation, with Model Predictive Control for 6DOF Trajectory
 This is a companion of the Paper '[*PAPER NAME*]' authored by J. Close<sup>a</sup>, M. Van<sup>a</sup>, N. Nguyen<sup>a</sup>, S. McIlvanna<sup>a</sup>, Y. Sun<sup>a</sup>, K. Olayemi<sup>a</sup> and C. Wei<sup>b</sup><br/>
 <sup>a</sup>School of Electronics, Electrical Engineering &amp; Computer Science, Queen's University Belfast, Northern Ireland <br/>
 <sup>b</sup>School of Mechanical &amp; Aerospace Engineering, Queen's University Belfast, Northern Ireland
+
+***
+
 # Point Stabilisation Tasks (MPC *only*)
 ## 1 Axis Reference
 In the following examples showcasing Model Predictive Control for Point Stabilisation, the target point is only defined in 1 Axis.
@@ -53,7 +56,9 @@ simultaneous variables. <br/>
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/87b8f1ee-49d6-44bb-a577-d26ffb1eee77" width="300" height="300">
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/e177c86b-c56d-44c5-bc39-f812740ec8f5" width="446" height="300">
 
-# Circle Tracking Tasks (MPC *only*)
+***
+
+# Trajectory (Circle) Tracking Tasks (MPC *only*)
 ## Reference Circle Aligned
 #### The BlueRov2 is lined up with the circular path that acts as a reference before the controller starts. <br/>
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/72cd1448-f88b-4a79-aab5-03885c5672e0" width="300" height="300">
@@ -77,24 +82,37 @@ circle is offset in (X,Y) and then placed either Above or Below for comparison o
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/6499da0d-c2e8-4d4b-8b3d-cc7111a6ef44" width="300" height="300">
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/a4d037a7-229d-4546-8b1b-8e1348318d15" width="446" height="300">
 
-
 #### Reference Circle Offset and placed Below
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/6220948b-ff1d-4f3a-8b73-5ec45c831b4d" width="300" height="300">
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/acd99da1-2a61-4f72-8001-439d06f65b76" width="446" height="300">
 
+***
 
 # Point Stabilisation & Collision Avoidance Tasks (MPC *and* CBF)
 ## Static Obstacle Avoidance
-Talking about stuff <br/>
+Introducing a single static obstacle demonstrates how the CBF acts as a safety factor to avoid collision. The CBF
+ensures that a radius of safety around both the BlueRov2 and the Obstacle never cross, which can be observed. <br/>
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/fb013107-e2c2-4306-8a03-a84241b7f5b0" width="300" height="300">
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/90ab5527-5456-48c3-95df-90e1825d4681" width="446" height="300">
 
 ## Moving Obstacle Avoidance
-Talking about stuff <br/>
+Since the controller is contstantly provided live data on the location and size of an obstacle, it can adapt and respond to obstacles
+that aren't in a fixed location and are moving around the environment. <br/>
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/d417fbac-4757-4342-b989-3cb711a37131" width="300" height="300">
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/2974d408-a740-44ba-b7fd-792413d04ea3" width="446" height="300">
 
 ## Static &amp; Moving Obstacle Avoidance
-Talking about stuff <br/>
+Assuming that the BlueRov2 can detect and track any obstacles within range using SONAR or HD Camera footage, the CBF can enable multiple obstacles - 
+both static and moving - to be avoided during the task. An advantageous feature for dynamic ocean envrironments. <br/>
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/2f21eba5-3790-4371-9728-7e448c7de055" width="300" height="300">
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/e441624b-8d86-4825-b421-ae7b76276e6b" width="446" height="300">
+
+***
+
+# Trajectory (Circle) Tracking & Collision Avoidance Tasks (MPC *and* CBF)
+## Static &amp; Moving Obstacle Avoidance
+
+Carrying on from the previous example with multiple static and moving obstacles, it is observed below that the same functionality
+is available for path tracking tasks. <br/>
+<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/0c3aa58d-eaca-408e-a38b-fd23031f9020" width="300" height="300">
+<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/8d2c9d9d-0120-4cf3-b6d9-3a03256ed053" width="550" height="300">
