@@ -1,12 +1,12 @@
 # BlueRov2 - Unified MPC &amp; CBF
 Videos of BlueRov2 Simulation, with Model Predictive Control for 6DOF Trajectory Tracking &amp; Control Barrier Functions for Collision Avoidance.
-This is a companion of the Paper '[*PAPER NAME*]' authored by J. Close<sup>a</sup>, M. Van<sup>a</sup>, N. Nguyen<sup>a</sup>, S. McIlvanna<sup>a</sup>, Y. Sun<sup>a</sup>, K. Olayemi<sup>a</sup> and C. Wei<sup>b</sup>
+This is a companion of the Paper '[*PAPER NAME*]' authored by J. Close<sup>a</sup>, M. Van<sup>a</sup>, N. Nguyen<sup>a</sup>, S. McIlvanna<sup>a</sup>, Y. Sun<sup>a</sup>, K. Olayemi<sup>a</sup> and C. Wei<sup>b</sup><br/>
 <sup>a</sup>School of Electronics, Electrical Engineering &amp; Computer Science, Queen's University Belfast, Northern Ireland <br/>
 <sup>b</sup>School of Mechanical &amp; Aerospace Engineering, Queen's University Belfast, Northern Ireland
 # Point Stabilisation Tasks (MPC *only*)
 ## 1 Axis Reference
 In the following examples showcasing Model Predictive Control for Point Stabilisation, the target point is only defined in 1 Axis.
-Due to the gravitational component, Z has Upwards &amp; Downwards versions for comparison.
+Due to the gravitational component, Z has Upwards &amp; Downwards versions for comparison. <br/>
 #### Reference in X
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/09febfe9-a39d-4e02-8a5b-d15589123094" width="300" height="300">
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/11873f2d-bd5b-4835-91ad-c4f8bd7ade84" width="446" height="300">
@@ -27,7 +27,7 @@ Due to the gravitational component, Z has Upwards &amp; Downwards versions for c
 In the following examples showcasing Model Predictive Control for Point Stabilisation, the target point is defined in 2 Axis. 
 This shows how the controller adapts when handling targets in multiple different DOF. Directly below is a good test for maintainining
 depth during a horizontal translation, and the latter two examples in this section allow comparison between working with and against
-gravity.
+gravity. <br/>
 #### Reference in (X,Y)
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/f8c0d57f-b080-40d9-88d3-d348c323d2c0" width="300" height="300">
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/d4ebcd9a-2264-4f50-afb8-860b1920d983" width="446" height="300">
@@ -44,7 +44,7 @@ gravity.
 In the following examples showcasing Model Predictive Control for Point Stabilisation, the target point is defined in 3 Axis. 
 This shows how the controller adapts when handling targets in multiple different DOF. In the first example below, the Reference Angles 
 are consistent and it is only moving in 3DOF (X,Y,Z). In the second example, all 6DOF are changed, giving it a rigorous test with multiple 
-simultaneous variables.
+simultaneous variables. <br/>
 #### Reference in (X,Y,Z) (Upwards)
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/3dddb427-4238-41f1-8ea0-3a83e28cfea8" width="300" height="300">
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/fb70a725-cb58-4459-b8c5-be81cc0bdd78" width="446" height="300">
@@ -61,7 +61,7 @@ simultaneous variables.
 
 ## Reference Circle Aligned (Above/Below)
 The BlueRov2 is only lined up with the circular path, that acts as a reference, in (X,Y) before the controller starts. The circle
-is then placed either Above or Below for comparison of gravitational effects.
+is then placed either Above or Below for comparison of gravitational effects. <br/>
 #### Reference Circle placed Above
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/bc9191d4-342b-4f3f-b086-f5fe3187af6c" width="300" height="300">
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/61a6ec20-518f-475c-99e3-a2ec7efdae73" width="446" height="300">
@@ -72,12 +72,29 @@ is then placed either Above or Below for comparison of gravitational effects.
 
 ## Reference Circle Offset (Above/Below)
 The BlueRov2 is not lined up with the circular path that acts as a reference before the controller starts. The starting point of the
-circle is offset in (X,Y) and then placed either Above or Below for comparison of gravitational effects.
+circle is offset in (X,Y) and then placed either Above or Below for comparison of gravitational effects. <br/>
 #### Reference Circle Offset and placed Above
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/6499da0d-c2e8-4d4b-8b3d-cc7111a6ef44" width="300" height="300">
-<img src="" width="446" height="300">
+<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/a4d037a7-229d-4546-8b1b-8e1348318d15" width="446" height="300">
 
 
 #### Reference Circle Offset and placed Below
 <img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/6220948b-ff1d-4f3a-8b73-5ec45c831b4d" width="300" height="300">
-<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/c0d17956-4b8f-400f-b3cd-30f8e0232446" width="446" height="300">
+<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/acd99da1-2a61-4f72-8001-439d06f65b76" width="446" height="300">
+
+
+# Point Stabilisation & Collision Avoidance Tasks (MPC *and* CBF)
+## Static Obstacle Avoidance
+Talking about stuff <br/>
+<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/fb013107-e2c2-4306-8a03-a84241b7f5b0" width="300" height="300">
+<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/90ab5527-5456-48c3-95df-90e1825d4681" width="446" height="300">
+
+## Moving Obstacle Avoidance
+Talking about stuff <br/>
+<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/d417fbac-4757-4342-b989-3cb711a37131" width="300" height="300">
+<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/2974d408-a740-44ba-b7fd-792413d04ea3" width="446" height="300">
+
+## Static &amp; Moving Obstacle Avoidance
+Talking about stuff <br/>
+<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/2f21eba5-3790-4371-9728-7e448c7de055" width="300" height="300">
+<img src="https://github.com/ethetic/BR2_MPC_CBF/assets/119050148/e441624b-8d86-4825-b421-ae7b76276e6b" width="446" height="300">
