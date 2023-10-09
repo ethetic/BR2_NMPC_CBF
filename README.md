@@ -1,6 +1,8 @@
 # BlueRov2 - Unified MPC &amp; CBF
 Videos of BlueRov2 Simulation, with Model Predictive Control for 6DOF Trajectory Tracking &amp; Control Barrier Functions for Collision Avoidance.
-This is a companion of the Paper '[*PAPER NAME*]' authored by J. Close<sup>a</sup>, M. Van<sup>a</sup>, N. Nguyen<sup>a</sup>, S. McIlvanna<sup>a</sup>, Y. Sun<sup>a</sup>, K. Olayemi<sup>a</sup> and C. Wei<sup>b</sup><br/>
+This is a companion of the Paper '*A Unified NMPC-CBF Approach to Kino-Dynamic,
+Collision-Avoidant Trajectory Tracking of Autonomous Underwater
+Vehicles*' authored by J. Close<sup>a</sup>, M. Van<sup>a</sup>, N. Nguyen<sup>a</sup>, S. McIlvanna<sup>a</sup>, Y. Sun<sup>a</sup>, K. Olayemi<sup>a</sup> and C. Wei<sup>b</sup><br/>
 <sup>a</sup>School of Electronics, Electrical Engineering &amp; Computer Science, Queen's University Belfast, Northern Ireland <br/>
 <sup>b</sup>School of Mechanical &amp; Aerospace Engineering, Queen's University Belfast, Northern Ireland
 
